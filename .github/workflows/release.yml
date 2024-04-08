@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   linting:
     name: Linting Checks
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -27,7 +27,7 @@ jobs:
     needs:
       - linting
     name: Run tests
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -42,7 +42,7 @@ jobs:
     needs:
       - run-tests
     name: create releases
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
