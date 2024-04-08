@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "YT Quick Actions",
-  "version": "1.1.1",
+  "name": "YT Quick Actions (all playlists)",
+  "version": "1.1.1b",
   "description": "Provide quick access to hidden YouTube actions.",
   "icons": {
     "48": "assets/extension-icons/firefox/icon.svg",
@@ -25,7 +25,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "{e34f8313-fac0-4c80-8f91-bb6ac28f4f19}"
+      "id": "nelxiost_yt_quick_actions_all_playlists"
     }
   }
 }
