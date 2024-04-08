@@ -24,7 +24,7 @@ function init() {
     initVideoObservers();
   } else if (pathAndQueryParams.includes("watch")) {
     initVideoObservers();
-  } else if (pathAndQueryParams.includes("playlist") && pathAndQueryParams.includes("list=WL")) {
+  } else if (pathAndQueryParams.includes("playlist")) {
     initPlaylistObservers();
   } else if (pathAndQueryParams.includes("subscriptions")) {
     initHomeOrSubscriptionsObservers();
